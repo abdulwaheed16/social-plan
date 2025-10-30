@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+
+    --primary: 270 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 80% 70%;
+
+    --secondary: 220 85% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 190 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 140 65% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 270 70% 55%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(270 70% 55%) 0%, hsl(220 85% 60%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(270 70% 55% / 0.05) 0%, hsl(220 85% 60% / 0.05) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 85% 55%) 0%, hsl(220 85% 60%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(240 10% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(240 10% 15% / 0.1), 0 2px 4px -2px hsl(240 10% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(240 10% 15% / 0.1), 0 4px 6px -4px hsl(240 10% 15% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(240 10% 15% / 0.1), 0 8px 10px -6px hsl(240 10% 15% / 0.1);
+    --shadow-glow: 0 0 30px hsl(270 70% 55% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 240 15% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 15% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 15% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 75% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 85% 75%;
+
+    --secondary: 220 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 190 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 140 65% 55%;
+    --success-foreground: 0 0% 100%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 240 5% 65%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 25%;
+    --input: 240 10% 25%;
+    --ring: 270 75% 60%;
+
+    --shadow-glow: 0 0 30px hsl(270 75% 60% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
