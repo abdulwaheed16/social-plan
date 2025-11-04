@@ -8,6 +8,14 @@
 
 There are several ways of editing your application.
 
+```sh
+
+```
+
+```sh
+
+```
+
 **Use Lovable**
 
 Simply visit the [Lovable Project](https://lovable.dev/projects/1461f103-c118-48d9-af0f-8826f5a87793) and start prompting.
@@ -71,5 +79,7 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
 # social-plan
+
 # social-plan
